@@ -1,4 +1,4 @@
-package com.example.open_as
+package com.example.open_as_default
 
 import androidx.annotation.NonNull
 
@@ -17,7 +17,7 @@ class OpenAsDefaultPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "open_as")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "open_as_default")
     channel.setMethodCallHandler(this)
   }
 

@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "open_as",
+            "name": "open_as_default",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "open_as (profile mode)",
+            "name": "open_as_default (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

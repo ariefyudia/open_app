@@ -1,4 +1,4 @@
-group 'com.example.open_as'
+group 'com.example.open_as_default'
 version '1.0-SNAPSHOT'
 
 buildscript {

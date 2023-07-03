@@ -11,7 +11,7 @@ import 'package:uri_to_file/uri_to_file.dart';
 /// ```
 ///
 class OpenAsDefault {
-  static const MethodChannel _channel = MethodChannel('open_as');
+  static const MethodChannel _channel = MethodChannel('open_as_default');
 
   /// Get the file received from [Intent] if a file is not residing it will return null
   static Future<File?> get getFileIntent async {

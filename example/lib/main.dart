@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:open_as/open_as.dart';
+import 'package:open_as_default/open_as_default.dart';
 
 void main() => runApp(MyApp());
 

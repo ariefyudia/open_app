@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:open_as/open_as.dart';
+import 'package:open_as_default/open_as_default.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('open_as');
+  const MethodChannel channel = MethodChannel('open_as_default');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
