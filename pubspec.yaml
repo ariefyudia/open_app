@@ -1,4 +1,4 @@
-name: open_as_default
+name: open_as
 description: A flutter plugin that allows setting up your flutter app to open files as default.
 version: 0.0.4
 # homepage: https://github.com/LuisDeLaValie
@@ -30,7 +30,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.TDTxLE.open_as_default
+        package: com.TDTxLE.open_as
         pluginClass: OpenAsDefaultPlugin
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

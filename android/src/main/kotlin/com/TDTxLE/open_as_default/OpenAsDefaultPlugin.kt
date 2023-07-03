@@ -1,4 +1,4 @@
-package com.TDTxLE.open_as_default
+package com.TDTxLE.open_as
 
 import android.content.Intent
 import android.net.Uri
@@ -33,7 +33,7 @@ class OpenAsDefaultPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
 
 
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "open_as_default")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "open_as")
     channel.setMethodCallHandler(this)
   }
 

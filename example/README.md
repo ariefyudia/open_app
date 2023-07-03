@@ -1,6 +1,6 @@
-# open_as_default_example
+# open_as_example
 
-Demonstrates how to use the open_as_default plugin.
+Demonstrates how to use the open_as plugin.
 
 ## Getting Started
 

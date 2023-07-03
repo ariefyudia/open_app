@@ -1,35 +1,37 @@
-# open_as_default
+# open_as
 
 A flutter plugin that allows setting up your flutter app to open files as default.
 
 Currently working only on Android, iOS Support coming soon.
 
-<img src="https://github.com/LuisDeLaValie/open_as_default/raw/master/demo_android.gif" alt="drawing" width="300"/>
-
+<img src="https://github.com/LuisDeLaValie/open_as/raw/master/demo_android.gif" alt="drawing" width="300"/>
 
 # Usage
 
 yaml file
+
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
-  open_as_default: ^<Version> #add line
+  open_as: ^<Version> #add line
 ```
+
 dart file
+
 ```dart
 //import plugin
-import 'package:open_as_default/open_as_default.dart';  
+import 'package:open_as/open_as.dart';
 
 ...
 
 @override
   void initState() {
     super.initState();
-    
+
     OpenAsDefault.getFileIntent.then((value) {
       print(value);
-      // code 
+      // code
     });
   }
 ```
@@ -37,13 +39,14 @@ import 'package:open_as_default/open_as_default.dart';
 #### Android
 
 android/app/src/main/manifest.xml
+
 ```xml
 <application
 ..
 >
     <activity
     ...
-    >           
+    >
         <!-- addd line -->
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
@@ -52,12 +55,10 @@ android/app/src/main/manifest.xml
             <category android:name="android.intent.category.APP_BROWSER" />
 
             <data
-                android:mimeType="application/pdf" 
+                android:mimeType="application/pdf"
                 android:scheme="content" />
         </intent-filter>
 
-    </activity> 
+    </activity>
 </application>
 ```
-
-
